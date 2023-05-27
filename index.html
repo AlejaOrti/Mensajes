@@ -2,38 +2,30 @@
 <html lang="es">
     <head>  
         <meta charset ="UTF-8"> 
-       
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-        <link rel="stylesheet" media="only screen and (max-width: 768px)" href="StyleChanchee.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="StyleChanchee.css">
+        
 
     <title>MI PRIMER RETO</title>
   </head>
-
+<main>
    <img src="Vector.png" class="logo" alt="logo">
-   <section class="container"> 
-    <div class="row"
-   <div class= "col-sm-60 col-md-10 col-lg-12">
+<div>
    <h1 class="titulolindo">Desencriptar tu mensajes</h1>
-  </div>
-    <div class= "col-sm-30 col-md-8 col-lg-8">
-   <img src="decte.jpg" class="imagenDiferenciales">
-   </div>
-   <div class= "col-sm-60 col-md-10 col-lg-12">
-  <textarea name="textarea" class="text-area" rows="10" sentences="textoInicial" cols="30" spellcheck="true" aria-checked="true" wrap="hard"> Escribe aquí</textarea> 
-</div>
-  <img src="icono.png" class="icono" alt="icono" style="float: left;">
-   <p id="advertencia" ><strong>Letras minusculas y sin acentos.</p></strong> 
-  <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+   <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-  
+   <button class="copiar" onclick="copiar()">Copiar</button>
+   <textarea class="text-area" cols="40" rows="8"  sentences="textoInicial" cols="30" spellcheck="true" aria-checked="true" wrap="hard" placeholder="Ingrese el texto aqui"></textarea>
+   <img src="decte.jpg" class="imagenDiferenciales">
+   <div><p id="advertencia" ><strong>Solo letras minusculas y sin acentos.</p></strong></div>
+ 
+</div>
   </body>
    <h6 class="hecho">Elaborado por: Male</h6>
-   <div class= "col-sm-12 col-md-6 col-lg-8">  </div>
-    <textarea class="mensaje" cols="10" rows="10" sentences="textoInicial" cols="80" spellcheck="true" aria-checked="true" wrap="hard"></textarea>
-  <div class="col-sm-12 col-md-6 col-lg-8">  </div>
+    <textarea class="mensaje" cols="40" rows="8" sentences="textoInicial" cols="30" spellcheck="true" aria-checked="true" wrap="hard"></textarea>
 
-  </section>
+  </main>
   <script>
   
     const textArea = document.querySelector(".text-area");
@@ -78,6 +70,13 @@ function desencriptar(stringDesencriptada){
      }
 }
 return stringDesencriptada
+}
+
+function copiar(){
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value)
+    mensaje.value = "";
+    alert("Texto Copiado")
 }
 
 
