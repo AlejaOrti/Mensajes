@@ -10,9 +10,7 @@ body{
   background:#FFFFFF;
   padding: 20px;
   background: linear-gradient(yellow,red);
-  -webkit-background-clip:text;
-  color: transparent;  
-   
+ 
 }
 
 .text-area{
