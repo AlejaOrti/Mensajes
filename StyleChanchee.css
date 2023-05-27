@@ -30,9 +30,9 @@ body{
     font-weight: bold;
     word-wrap: normal;
     position: absolute;
-    width: 436px;
+    width: 400px;
     height: 400;
-    left: 900px;
+    left: 500px;
     top:225px;
     border-top-width: 770px;
     -webkit-background-clip:text;
@@ -42,9 +42,9 @@ body{
 }
 .imagenDiferenciales{
 position: absolute;
-width: 400px;
-height: 374px;
-left: 820px;
+width: 200px;
+height: 600px;
+left: 700px;
 top: 43px;
 border-top-width: 770px;
 filter:brightness(1.1);
