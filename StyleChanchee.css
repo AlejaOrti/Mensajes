@@ -20,6 +20,7 @@ body{
     color: #cd154f;
     font-weight: bold;
     word-wrap: normal;
+    left: 300px;
     
     }
     
@@ -42,12 +43,13 @@ body{
 .imagenDiferenciales{
 position: absolute;
 width: 790px;
-height: 874px;
-left: 832px;
+height: 374px;
+left: 820px;
 top: 43px;
 border-top-width: 770px;
 filter:brightness(1.1);
-mix-blend-mode: multiply;
+mix-blend-mode: multiply
+
 
 }
 #advertencia{
@@ -114,6 +116,4 @@ justify-content:right;
   display: flex;
   justify-content:center;
  
-
-   
 }
