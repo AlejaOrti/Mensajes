@@ -10,7 +10,9 @@ body{
   background:#FFFFFF;
   padding: 20px;
   background: linear-gradient(yellow,red);
- 
+  -webkit-background-clip:text;
+  color: transparent;  
+   
 }
 
 .text-area{
@@ -40,7 +42,7 @@ body{
 }
 .imagenDiferenciales{
 position: absolute;
-width: 790px;
+width: 400px;
 height: 374px;
 left: 820px;
 top: 43px;
