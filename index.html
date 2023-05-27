@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>  
-        <meta charset ="UTF-8">
- 
-    <link rel="stylesheet"  media="only screen and (max-width: 768px)" href="StyleChanchee.css"  >
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset ="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet"  href="StyleChanchee.css"  >
+
     <title>MI PRIMER RETO</title>
   </head>
-   <nav class="m-1"></nav>
+
    <img src="Vector.png" class="logo" alt="logo">
    </nav>
    <h1 class="titulolindo">Desencriptar tu mensajes</h1>
+   <section class="container"> 
+    <div class="row"
+    <div class= "col-sm-12 col-md-6 col-lg-8">
    <img src="dibujitoñindo.jpg" class="imagenDiferenciales">
-   <textarea name="textarea" class="text-area" rows="20" sentences="textoInicial" cols="80" spellcheck="true" aria-checked="true" wrap="hard"> Escribe aquí</textarea> 
-   <div>
+  <textarea name="textarea" class="text-area" rows="10" sentences="textoInicial" cols="80" spellcheck="true" aria-checked="true" wrap="hard"> Escribe aquí</textarea> 
+  <div class= "col-sm-12 col-md-6 col-lg-8">  </div>
    <img src="icono.png" class="icono" alt="icono" style="float: left;">
    <p id="advertencia" ><strong>Letras minusculas y sin acentos.</p></strong> 
   <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-   
+  
   </body>
    <h6 class="hecho">Elaborado por: Male</h6>
-   <seletion>
+   <div class= "col-sm-12 col-md-6 col-lg-8">  </div>
     <textarea class="mensaje" cols="20" rows="20" sentences="textoInicial" cols="80" spellcheck="true" aria-checked="true" wrap="hard"></textarea>
-   </seletion>
+  <div class="col-sm-12 col-md-6 col-lg-8">  </div>
+
+  </section>
   <script>
   
     const textArea = document.querySelector(".text-area");
