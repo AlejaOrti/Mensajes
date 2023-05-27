@@ -1,6 +1,9 @@
+@media (max-width: 1200px) { 
 body{
   background: 
    linear-gradient( 200deg, #F6D242 20%, #FF52E5 100%);
+   width:100%;
+}
 }
 
 .titulolindo{
@@ -20,19 +23,18 @@ body{
     color: #cd154f;
     font-weight: bold;
     word-wrap: normal;
-    left: 300px;
     
     }
     
 .mensaje{
   font-size: 18px;
-    color: #cd154f;
+    color: #ff0051;
     font-weight: bold;
     word-wrap: normal;
     position: absolute;
-    width: 400px;
+    width: 436px;
     height: 400;
-    left: 500px;
+    left: 900px;
     top:225px;
     border-top-width: 770px;
     -webkit-background-clip:text;
@@ -42,9 +44,9 @@ body{
 }
 .imagenDiferenciales{
 position: absolute;
-width: 200px;
-height: 600px;
-left: 700px;
+width: 790px;
+height: 474px;
+left: 600px;
 top: 43px;
 border-top-width: 770px;
 filter:brightness(1.1);
@@ -93,7 +95,7 @@ justify-content:right;
   
   }
 
-  .copiar_texto{
+  .copiar{
     float: left;
     display:flex;
     margin: 12px;
